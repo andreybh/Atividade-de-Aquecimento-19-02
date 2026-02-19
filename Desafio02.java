@@ -14,7 +14,6 @@ public class Desafio2 {
             System.out.println("Valores inválidos! Digite números entre 1 e 20.");
         } else {
 
-            // 🔹 Retângulo completo
             System.out.println("\nRetângulo completo:");
             for (int i = 1; i <= altura; i++) {
                 for (int j = 1; j <= largura; j++) {
@@ -23,7 +22,6 @@ public class Desafio2 {
                 System.out.println();
             }
 
-            // 🔹 Diagonal superior direita
             System.out.println("\nDiagonal superior direita:");
             for (int i = 1; i <= altura; i++) {
                 for (int j = 1; j <= largura; j++) {
