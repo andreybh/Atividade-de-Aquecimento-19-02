@@ -25,22 +25,18 @@ public class VerificadorEquilibrio {
         for (int i = 0; i < expressao.length(); i++) {
             char c = expressao.charAt(i);
 
-            // Se for delimitador de abertura → empilha
             if (c == '(' || c == '[' || c == '{') {
                 pilha.push(c);
             }
 
-            // Se for delimitador de fechamento → verifica
             if (c == ')' || c == ']' || c == '}') {
 
-                // Se a pilha estiver vazia → erro
                 if (pilha.isEmpty()) {
                     return false;
                 }
 
                 char topo = pilha.pop();
 
-                // Verifica se o fechamento corresponde ao topo
                 if ((c == ')' && topo != '(') ||
                     (c == ']' && topo != '[') ||
                     (c == '}' && topo != '{')) {
